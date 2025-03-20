@@ -1,0 +1,136 @@
+body {
+  background-image: url("https://wallpapercave.com/wp/wp6032389.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff5c6;
+}
+
+.card {
+  background-color: #000000 !important;
+  border-color: #ffd700;
+}
+
+#presentation .card {
+  .card-title {
+    color: gold;
+  }
+  .card-text {
+    color: #ffffff;
+  }
+  .btn {
+    color: black;
+    background-color: gold;
+    border: gold;
+  }
+}
+
+/*Paleta de colores que con la que remplazar */
+
+:root[data-theme="light"] {
+  --text: #261b0d;
+  --background: #faf6ef;
+  --primary: #ff8c00;
+  --secondary: #eeb877;
+  --accent: #ce770d;
+}
+:root[data-theme="dark"] {
+  --text: #f2e7d9;
+  --background: #100c05;
+  --primary: #ff8c00;
+  --secondary: #885211;
+  --accent: #f29b31;
+}
+
+/*WIP: Rehacer ids y hacer una lista ordenada y concreta*/
+
+#buttonSocials {
+  background-color: #000000 !important;
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+#navbar {
+  background-color: #6862487c !important;
+  .dropdown-menu {
+    background-color: #fff5c6 !important;
+  }
+  .dropdown-menu .dropdown-item {
+    color: gold;
+  }
+}
+
+
+#iconsNavbar {
+  color: #ff7300;
+}
+
+#textNavbar {
+  color: #000000;
+}
+
+#footer {
+  font-size: large;
+  background-color: #000000 !important;
+}
+
+#carouselAbnormalitiesFrontPage {
+  background-color: #000000;
+  img {
+    height: 320px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#carouselTeamsFrontPage .carousel-caption {
+  background-color: #000000;
+  color: gold;
+  font-size: medium;
+}
+
+#database .card {
+  background-color: #000000;
+  color: gold;
+  border-color: #ffd700;
+  .link {
+    color: #ffd700;
+  }
+  img {
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#archives .card {
+  background-color: #000000;
+  color: gold;
+  border-color: #ffd700;
+  .link {
+    color: #ffd700;
+  }
+  img {
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+#procedures .card {
+  background-color: #000000;
+  color: gold;
+  border-color: #ffd700;
+  .link {
+    color: #ffd700;
+  }
+  img {
+    height: 500px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
