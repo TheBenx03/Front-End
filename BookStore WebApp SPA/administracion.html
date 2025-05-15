@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <!--Header-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Babel - Inicio</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--References to css-->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Babel</h1>
+  <p>Explora el mundo por sus palabras – libros extranjeros en su idioma de origen</p>
+</header>
+
+<div class="hero"></div>
+<nav id="Pestañas"></nav>
+
+<section class="LibroCreate" id="agregar-libro-detallado">
+  <h2 style="text-align:center;">Agregar Libro</h2>
+  <form style="width: 100%" id="formulario-libro-detallado">
+
+    <div class="inputContainer">
+      <label for="idLibro">ID del Libro:</label><br><br>
+      <input class="input" type="text" id="idLibro" name="idLibro" required><br><br>
+    </div>
+    <div class="inputContainer">
+      <label for="nombreLibro">Nombre:</label><br><br>
+      <input class="input" type="text" id="nombreLibro" name="nombreLibro" required><br><br>
+    </div>
+    <div class="inputContainer">
+      <label for="autorLibro">Autor:</label><br><br>
+      <input class="input" type="text" id="autorLibro" name="autorLibro" required><br><br>
+    </div>
+    <div class="inputContainer">
+      <label for="lenguajeLibro">Lenguaje:</label><br><br>
+      <input class="input" type="text" id="lenguajeLibro" name="lenguajeLibro" required><br><br>
+    </div>
+    <div class="inputContainer">
+      <label for="categoriasLibro">Categorías (separadas por comas):</label><br><br>
+      <input class="input" type="text" id="categoriasLibro" name="categoriasLibro" required><br><br>
+    </div>
+    <div class="inputContainer">
+      <label for="notaLibro">Nota (1 a 5):</label><br><br>
+      <input class="input" type="number" id="notaLibro" name="notaLibro" min="1" max="5" required><br><br>
+    </div>
+
+    <button type="button" id="agregar-libro" class="adminButton">Agregar Libro</button>
+  </form>
+
+  <div id="errores-libro-detallado" style="color: red; margin-top: 1rem;"></div>
+</section>
+<table class="librosTabla" id="tabla-libros" border="1">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Autor</th>
+    <th>Lenguaje</th>
+    <th>Categorías</th>
+    <th>Nota</th>
+    <th>Acciones</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<footer>
+  <p>&copy; 2025 Babel. All rights reserved.</p>
+</footer>
+
+<div id="editModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Editar Libro</h2>
+    <form id="editLibroForm">
+      <input type="hidden" id="editLibroId">
+
+      <div class="inputContainer">
+        <label for="idLibroEdit">ID del Libro:</label><br><br>
+        <input class="input" type="text" id="idLibroEdit" name="idLibro" required><br><br>
+      </div>
+      <div class="inputContainer">
+        <label for="nombreLibroEdit">Nombre:</label><br><br>
+        <input class="input" type="text" id="nombreLibroEdit" name="nombreLibro" required><br><br>
+      </div>
+      <div class="inputContainer">
+        <label for="autorLibroEdit">Autor:</label><br><br>
+        <input class="input" type="text" id="autorLibroEdit" name="autorLibro" required><br><br>
+      </div>
+      <div class="inputContainer">
+        <label for="lenguajeLibroEdit">Lenguaje:</label><br><br>
+        <input class="input" type="text" id="lenguajeLibroEdit" name="lenguajeLibro" required><br><br>
+      </div>
+      <div class="inputContainer">
+        <label for="categoriasLibroEdit">Categorías (separadas por comas):</label><br><br>
+        <input class="input" type="text" id="categoriasLibroEdit" name="categoriasLibro" required><br><br>
+      </div>
+      <div class="inputContainer">
+        <label for="notaLibroEdit">Nota (1 a 5):</label><br><br>
+        <input class="input" type="number" id="notaLibroEdit" name="notaLibro" min="1" max="5" required><br><br>
+      </div>
+
+      <button type="button" id="guardar-libro" class="btn-guardar">Guardar Cambios</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/header.js"></script>
+<script src="js/libroCrud.js"></script>
+
+</body>
+</html>

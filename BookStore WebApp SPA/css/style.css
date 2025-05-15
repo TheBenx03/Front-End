@@ -117,6 +117,78 @@ nav a {
   margin-bottom: 10px;
 }
 
+.login {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.LibroCreate{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: normal;
+  vertical-align: top;
+}
+
+.adminButton{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 50%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.adminButton:hover {
+  transform: scale(1.05);
+}
+
+.librosTabla {
+  width: 95%;
+  border-collapse: collapse;
+  background-color: white;
+  horiz-align: center;
+  margin: 20px;
+}
+
+td {
+  text-align: center;
+  height: 80px;
+}
+.btn-quitar, .btn-editar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 70%;
+  height: 40px;
+  font-size: 16px;
+  margin: 10px;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -131,4 +203,43 @@ footer {
   font-size: 1.1rem;
   color: var(--text, #261b0d);
   margin-top: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  vertical-align: center;
+  horiz-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: black;
 }
