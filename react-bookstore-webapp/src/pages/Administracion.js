@@ -1,5 +1,4 @@
 import React from 'react'
-import Bookshelf from "../components/Bookshelf";
 
 export function Administracion() {
     return  (

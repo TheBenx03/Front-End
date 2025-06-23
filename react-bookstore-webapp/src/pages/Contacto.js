@@ -1,5 +1,4 @@
 import React from 'react'
-import Bookshelf from "../components/Bookshelf";
 
 export function Contacto() {
     return  (
@@ -9,9 +8,9 @@ export function Contacto() {
                     ¡Contáctanos!</p>
             </section>
 
-            <section class="section">
+            <section className="section">
                 <h2>Información de Contacto</h2>
-                <div class="contact-info">
+                <div className="contact-info">
                     <p><strong>Correo electrónico:</strong> contacto@babel-libros.cl</p>
                     <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
                     <p><strong>Dirección:</strong> Av. de los Idiomas 2345, Santiago, Chile</p>
