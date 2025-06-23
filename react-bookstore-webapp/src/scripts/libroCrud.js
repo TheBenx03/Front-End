@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // BOTON DE AGREGAR, ELIMINAR Y EDITAR
     const botonAgregar = document.getElementById('agregar-libro');
     botonAgregar.addEventListener('click', agregarLibro);
-    tablaLibrosBody.addEventListener('click', eliminarLibro);
-    tablaLibrosBody.addEventListener('click', abrirModal);
 
     // CONSTANTES USADAS EN LA EDICION
     const editModal = document.getElementById('editModal');
@@ -88,7 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         botonEditar.dataset.categorias = categorias;
         botonEditar.dataset.nota = nota;
 
-
+        botonQuitar.addEventListener('click', eliminarLibro);
+        botonEditar.addEventListener('click', abrirModal);
 
         celdaAcciones.appendChild(botonQuitar);
         celdaAcciones.appendChild(botonEditar);
@@ -231,6 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
             botonEditar.dataset.lenguaje = libro.lenguaje;
             botonEditar.dataset.categorias = libro.categorias;
             botonEditar.dataset.nota = libro.nota;
+
+            botonQuitar.addEventListener('click', eliminarLibro);
+            botonEditar.addEventListener('click', abrirModal);
 
             celdaAcciones.appendChild(botonQuitar);
             celdaAcciones.appendChild(botonEditar);

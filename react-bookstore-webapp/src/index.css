@@ -86,7 +86,7 @@ nav a {
 }
 .books {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -95,7 +95,6 @@ nav a {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  width: 180px;
   margin: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
@@ -132,11 +131,11 @@ nav a {
 }
 
 .LibroCreate{
-  background-color: white;
-  border-radius: 10px;
+  background-color: #fff4e6;
+  border-radius: 12px;
   padding: 15px;
-  margin: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
   transition: transform 0.2s ease-in-out;
   text-align: start;
   width: 50%;
@@ -168,16 +167,38 @@ nav a {
 
 .librosTabla {
   width: 95%;
+  margin: 20px auto;
   border-collapse: collapse;
-  background-color: white;
-  horiz-align: center;
-  margin: 20px;
+  background-color: #fff4e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.53);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.librosTabla th, .librosTabla td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.librosTabla th {
+  background-color: #d08b3a; /* naranja suave */
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.librosTabla tr:hover {
+  background-color: #f9f9f9;
 }
 
 td {
-  text-align: center;
   height: 80px;
+  font-size: 0.95rem;
+  color: #333;
 }
+
 .btn-quitar, .btn-editar {
   background-color: white;
   border-radius: 10px;
@@ -187,6 +208,10 @@ td {
   height: 40px;
   font-size: 16px;
   margin: 10px;
+}
+
+.btn-quitar:hover, .btn-editar:hover {
+  transform: scale(1.05);
 }
 
 footer {
@@ -216,7 +241,7 @@ footer {
 }
 
 .modal-content {
-  background-color: lightgrey;
+  background-color: #fff4e6;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -224,7 +249,7 @@ footer {
   border-radius: 10px;
   width: 80%;
   max-width: 600px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
   position: relative;
   vertical-align: center;
   horiz-align: center;
@@ -242,4 +267,29 @@ footer {
 
 .close-modal:hover {
   color: black;
+}
+
+.btn-guardar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 50%;
+  height: 40px;
+  font-size: 16px;
+}
+.btn-guardar:hover {
+  transform: scale(1.05);
+}
+
+.adm-h2 {
+  text-align: center;
+}
+.adm-form {
+  width: 100%
+}
+
+.adm-divError {
+  color: red;
+  margin-top: 1rem;
 }
