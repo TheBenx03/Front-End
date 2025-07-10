@@ -156,9 +156,10 @@ nav a {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
-  width: 50%;
+  width: 45%;
   height: 40px;
   font-size: 16px;
+  margin: 10px
 }
 
 .adminButton:hover {
@@ -177,7 +178,7 @@ nav a {
 }
 
 .librosTabla th, .librosTabla td {
-  padding: 16px;
+  padding: 5px;
   text-align: center;
   border-bottom: 1px solid #000000;
 }
@@ -197,6 +198,7 @@ td {
   height: 80px;
   font-size: 0.95rem;
   color: #333;
+  width: 120px;
 }
 
 .btn-quitar, .btn-editar {
